@@ -50,10 +50,9 @@ for (line in x){
 
 
 
-# PLOT A VIOLIN PLOT OF PROLINE RATIOS
+# PLOT A HISTOGRAM OF PROLINE RATIOS
 install.packages('vioplot')
-library(vioplot)
-vioplot(proline_count, col = 'green', ylab = 'Proline ratio', main = 'Proline Composition Ratio of PDB Sequences')
+hist(proline_count, col = 'green', ylab = 'Proline ratio', main = 'Proline Composition Ratio of PDB Sequences', breaks = 40)
 
 
 
