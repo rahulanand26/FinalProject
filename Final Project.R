@@ -244,9 +244,9 @@ vioplot(PRP_PIDs, non_PRP_PIDs, col = 'red', ylab = 'Percent Sequence Identity',
 
 # Get Mean, Median, Min, Max
 summary(PRP_PIDs)
-# Mean: 3.78, Median = 0, Min = 0, Max = 48. 213
+# Mean: 3.78, Median = 0, Min = 0, Max = 48.213
 summary(non_PRP_PIDs)
-# 
+# Mean: 5.24, Median = 4.64, Min = 0, Max = 98.325
 
 # Conduct a t-test to see if we see a significant difference
 ?t.test
