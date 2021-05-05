@@ -244,6 +244,15 @@ vioplot(PRP_PIDs, non_PRP_PIDs, col = 'red', ylab = 'Percent Sequence Identity',
 
 # Get Mean, Median, Min, Max
 summary(PRP_PIDs)
+# Mean: 3.78, Median = 0, Min = 0, Max = 48. 213
 summary(non_PRP_PIDs)
+# 
+
+# Conduct a t-test to see if we see a significant difference
+?t.test
+t.test(PRP_PIDs, non_PRP_PIDs)
+# P value = 0.0423. Because p < 0.05, we reject null hypothesis. Non-PRPs have a
+# significantly higher mean protein sequence identity than PRPs.
+
 
 
